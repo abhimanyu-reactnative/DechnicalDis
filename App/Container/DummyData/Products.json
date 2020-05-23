@@ -10,5 +10,11 @@
         "name": "Samsung",
         "price": "15000",
         "numberOfItems": 0
+    },
+    {
+        "id": 3,
+        "name": "Tv",
+        "price": "25000",
+        "numberOfItems": 0
     }
 ]

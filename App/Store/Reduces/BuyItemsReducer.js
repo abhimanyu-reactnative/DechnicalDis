@@ -17,7 +17,10 @@ const reducer = (state = initialIphoneState, action) => {
             }
 
         case DECREMENT:
-            item.numberOfItems = item.numberOfItems - 1
+            if(item.numberOfItems !== 0){
+                item.numberOfItems = item.numberOfItems - 1
+            }
+            
             return {
                 ...state,
                 JsonData: JsonData

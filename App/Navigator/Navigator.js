@@ -7,7 +7,7 @@ const switchNavigator = createStackNavigator({
     Products
 },
     {
-        initialRouteName: 'Products'
+        initialRouteName: 'Login'
     }
 )
 

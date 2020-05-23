@@ -39,11 +39,12 @@ class Login extends Component {
                     style = {styles.inputStyle}
                     onChangeText = {(text) => this.onChangePassword(text)}
                     value = {this.state.password}
+                    secureTextEntry={true}
                 />
 
                 <TouchableOpacity style={styles.buttonStyle} onPress = {()=> {this.submit()}}>
                     <View >
-                        <Text>Submit</Text>
+                        <Text style={{color: "white"}}>Submit</Text>
                     </View>
                 </TouchableOpacity>
             </View>
