@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Navigator from './App/Navigator/Navigator.js'
+import { Provider } from 'react-redux'
+import store from './App/Store/Store'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <Provider store={store}>
+      <Navigator />
+    </Provider>
   );
 }
 

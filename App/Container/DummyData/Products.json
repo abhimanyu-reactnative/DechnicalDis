@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone",
+        "price": "20000",
+        "numberOfItems": 0
+    },
+    {
+        "id": 2,
+        "name": "Samsung",
+        "price": "15000",
+        "numberOfItems": 0
+    }
+]
