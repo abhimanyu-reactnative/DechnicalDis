@@ -22,7 +22,13 @@ class Login extends Component {
     }
 
     submit = () => {
-        this.props.navigation.navigate('Products')
+        if(this.state.username.trim().length > 0 && this.state.password.trim().length > 0){
+            this.props.navigation.navigate('Products')
+        }
+        else{
+            alert("Please enter username and password")
+        }
+       
     }
 
     render() {
@@ -33,6 +39,7 @@ class Login extends Component {
                     style = {styles.inputStyle}
                     onChangeText = {(text) => this.onChangeUsername(text)}
                     value = {this.state.username}
+                    placeholder = "Username"
                 />
 
                 <TextInput 
@@ -40,6 +47,7 @@ class Login extends Component {
                     onChangeText = {(text) => this.onChangePassword(text)}
                     value = {this.state.password}
                     secureTextEntry={true}
+                    placeholder = "Password"
                 />
 
                 <TouchableOpacity style={styles.buttonStyle} onPress = {()=> {this.submit()}}>
