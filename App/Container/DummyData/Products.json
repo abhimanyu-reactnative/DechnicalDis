@@ -16,5 +16,11 @@
         "name": "Tv",
         "price": "25000",
         "numberOfItems": 0
+    },
+    {
+        "id": 5,
+        "name": "Laptop",
+        "price": "50000",
+        "numberOfItems": 0
     }
 ]
